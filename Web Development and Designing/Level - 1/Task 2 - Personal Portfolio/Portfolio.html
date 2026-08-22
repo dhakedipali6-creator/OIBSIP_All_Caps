@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
 
-    <!-- custom css file link -->
+    <!-- Custom css file link -->
     <link rel="stylesheet" href="portfolio.css" />
 
+    <!-- Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
     <!-- Header Section -->
     <header>
       <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <h2>Dipali Dhake👩🏻‍💻</h2>
+        <div class="nav2">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
     </header>
 
@@ -28,29 +37,27 @@
       <section class="home" id="home">
         <div class="home-content">
           <div class="text">
-            <h1>Hello,I'm <span>Dipali Dhake</span></h1>
+            <h1>Hello, I'm <span>Dipali Dhake</span></h1>
             <h2>Frontend Developer</h2>
             <p>
-              Passionate Frontend Developer skilled in HTML, CSS, and currently
-              learning Javasrcipt. I love building responsive and user-friendly
-              websites.
+              Crafting Modern, Responsive and User-friendly websites with
+              passsion and precision.
             </p>
 
-            <a href="#contact" class="btn">Get In Touch</a>
+            <a href="Resume/Resume.pdf" class="btn-1"
+              >Download Resume <i class="ri-arrow-down-line"></i
+            ></a>
+            <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
           <div class="image">
-            <img
-              src="images/Photo.jpg"
-              alt="Photo"
-              height="550px"
-              width="400px"
-            />
+            <img src="images/Photo.jpg" alt="Photo" />
           </div>
         </div>
       </section>
 
       <!--About Section -->
       <section class="about" id="about">
+        <h2>About Me</h2>
         <div class="about-content">
           <div class="about-image">
             <div class="image">
@@ -63,14 +70,14 @@
             </div>
           </div>
           <div class="about-text">
-            <h2 class="heading">About Me</h2>
+            <h4>Hi, I'm <span> Dipali Dhake</span></h4>
             <p>
-              Hi, I'm <span> Dipali Dhake</span> a passionate Front-End
-              Developer and MCA student. I enjoy creating responsive and
-              user-friendly websites using HTML, CSS, and JavaScript. <br />I
-              love learning new technologies and continuously improving my web
-              development skills. My Goal is to start my career in
-              <b>Software Development</b> and build modern Web Applications.
+              a passionate Front-End Developer and MCA student. I enjoy creating
+              responsive and user-friendly websites using HTML, CSS, and
+              JavaScript. <br/> <br>I love learning new technologies and
+              continuously improving my web development skills. My Goal is to
+              start my career in <b>Software Development</b> and build modern
+              Web Applications.
             </p>
           </div>
         </div>
@@ -187,43 +194,18 @@
 
       <!-- contact -->
       <section class="contact" id="contact">
+        <h2 class="heading">Skills</h2>
         <div class="wrapper1">
           <div class="title1">
-            <h1>Contact Me</h1>
           </div>
           <div class="contact-form">
             <form>
               <div class="input-fields">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Name"
-                  name="name"
-                  required
-                />
-                <input
-                  type="email"
-                  class="input"
-                  placeholder="Email Address"
-                  name="email"
-                  pattern=".+@gmail\.com"
-                  required
-                />
-                <input
-                  type="phone"
-                  class="input"
-                  placeholder="Phone"
-                  name="phone"
-                />
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Subject"
-                  name="subject"
-                />
+                <label for="name">Name</label><input type="text" class="input" name="name" required/>
+                <label for="email">Email</label><input type="email" class="input"  name="email"  pattern=".+@gmail\.com"  required/>
               </div>
               <div class="msg">
-                <textarea placeholder="Message" name="message"></textarea>
+                <label for="message">Message</label><textarea  name="message"></textarea>
                 <br />
                 <div class="btn1">
                   <button type="submit" name="submit">Send Message</button>
